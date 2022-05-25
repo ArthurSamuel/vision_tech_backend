@@ -51,6 +51,7 @@ class ControllerLogin {
     });
     res.status(200).send({
       token: tokenJwt,
+      exp,
     });
   }
 }
